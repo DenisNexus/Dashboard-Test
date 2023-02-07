@@ -1,0 +1,103 @@
+.aside {
+    position: relative;
+    width: 306px;
+    padding: 112px 0 76px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+
+    @media screen and (max-width: $b-lg) {
+        display: none;
+    }
+
+
+}
+
+.active__menu{
+    left: 0;
+    width: 306px;
+    height: 650px;
+    padding: 112px 0 76px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+
+.close__btn{
+    display: none;
+
+    @media screen and (max-width: $b-lg) {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+// Menu -----------------------------------------
+.menu {
+    &__item {
+        width: 250px;
+        margin: 18px 0;
+        color: #9197B3;
+    }
+
+    &__item--active {
+        background-color: #5932EA;
+        color: white;
+        border-radius: 8px;
+    }
+
+    &__link {
+        width: 250px;
+        padding: 11px 8px 11px 11px;
+        display: inline-flex;
+        align-items: center; 
+        line-height: 21px;
+    
+        &-icon{
+            margin-right: 14px;
+    
+            & svg{
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__link-arrow{
+        margin-left: auto;
+    
+        & svg{
+            vertical-align: middle;
+        }
+    
+    }
+
+}
+
+// User info----------------------------------------
+
+.user {
+    display: flex;
+
+    &__pic{
+        margin-right: 12px;
+    }
+
+    &__name {
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    &__position {
+        font-size: 12px;
+        line-height: 18px;
+        color: #757575;
+    }
+}

@@ -1,0 +1,39 @@
+.wrapper{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    position: relative;
+
+    @media screen and (max-width: $b-lg) {
+        justify-content: center;
+    }
+}
+
+.header{
+    position: absolute;
+    top: 36px;
+    left: 29px;
+    
+    &__logo{
+        display: flex;
+        align-items: center;
+    
+        &::after{
+           content:"v.01";
+           font-size: 10px;
+           color: #838383;
+           padding-left: 7px;
+           padding-top: 14px;
+        }
+    
+    }
+
+    &__text{
+        padding-left: 8px;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 39px;
+    }
+
+}
